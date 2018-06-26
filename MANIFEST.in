@@ -4,15 +4,15 @@ include *.json
 include *.md
 include *.py
 include *.txt
-recursive-include library_management *.css
-recursive-include library_management *.csv
-recursive-include library_management *.html
-recursive-include library_management *.ico
-recursive-include library_management *.js
-recursive-include library_management *.json
-recursive-include library_management *.md
-recursive-include library_management *.png
-recursive-include library_management *.py
-recursive-include library_management *.svg
-recursive-include library_management *.txt
-recursive-exclude library_management *.pyc
+recursive-include terester_restaurant *.css
+recursive-include terester_restaurant *.csv
+recursive-include terester_restaurant *.html
+recursive-include terester_restaurant *.ico
+recursive-include terester_restaurant *.js
+recursive-include terester_restaurant *.json
+recursive-include terester_restaurant *.md
+recursive-include terester_restaurant *.png
+recursive-include terester_restaurant *.py
+recursive-include terester_restaurant *.svg
+recursive-include terester_restaurant *.txt
+recursive-exclude terester_restaurant *.pyc
