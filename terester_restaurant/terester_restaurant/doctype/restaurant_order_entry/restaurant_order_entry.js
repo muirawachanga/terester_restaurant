@@ -135,7 +135,7 @@ frappe.ui.form.on('Restaurant Order Entry', {
                     fieldtype: 'Data',
                     reqd: 1,
                     options: 'Enter Amount',
-                    'default': ''
+                    'default': frm.invoice.grand_total
                 }
 			], (data) => {
 				// cache this for next entry

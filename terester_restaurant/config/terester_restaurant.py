@@ -13,6 +13,11 @@ def get_data():
                     "type": "doctype",
                     "name": "Restaurant",
                     "description": _("Create Restaurant")
+                },
+                {
+                    "type": "doctype",
+                    "name": "Restaurant Reservation",
+                    "description": _("Create Restaurant reservations")
                 }
             ]
         },
@@ -30,6 +35,11 @@ def get_data():
                     "type": "doctype",
                     "name": "Restaurant Table",
                     "description": _("Create Tables.")
+                },
+                {
+                    "type": "doctype",
+                    "name": "Restaurant Order Entry",
+                    "description": _("Create Orders.")
                 }
             ]
         },

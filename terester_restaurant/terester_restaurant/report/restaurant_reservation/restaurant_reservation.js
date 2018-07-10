@@ -7,14 +7,14 @@ frappe.query_reports["Restaurant Reservation"] = {
     			"fieldname":"reservation_time",
     			"label": __("From Date"),
     			"fieldtype": "Datetime",
-    			"default": "",
+    			"default": frappe.datetime.get_today(),
     			"width": "80"
     		},
     		{
     			"fieldname":"reservation_end_time",
     			"label": __("To Date"),
     			"fieldtype": "Datetime",
-    			"default": ""
+    			"default": frappe.datetime.now_datetime()
     		},
     		{
     			"fieldname":"customer",

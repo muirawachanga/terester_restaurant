@@ -45,7 +45,7 @@ def sync(table, items):
 			item_code = d.get('item'),
 			qty = d.get('qty')
 		))
-
+	# msgprint(_(invoice))
 	invoice.save()
 	return invoice.as_dict()
 
