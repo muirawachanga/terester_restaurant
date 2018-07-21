@@ -68,7 +68,9 @@ def make_invoice(table, customer, mode_of_payment, money):
 def item_query_restaurant(doctype='Item', txt='', searchfield='name', start=0, page_len=20, filters=None, as_dict=False):
 	'''Return items that are selected in active menu of the restaurant'''
 	restaurant, menu = get_restaurant_and_menu_name(filters['table'])
+	# frappe.msgprint(_(menu))
 	items = frappe.db.get_all('Restaurant Menu Item', ['item'], dict(parent = menu))
+	# frappe.msgprint(_(items))
 	del filters['table']
 	filters['name'] = ('in', [d.item for d in items])
 

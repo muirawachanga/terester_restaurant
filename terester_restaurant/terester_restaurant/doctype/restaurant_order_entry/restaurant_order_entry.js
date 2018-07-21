@@ -1,6 +1,6 @@
 // Copyright (c) 2017, Frappe Technologies Pvt. Ltd. and contributors
 // For license information, please see license.txt
-var money = 'hello';
+var money = " ";
 frappe.ui.form.on('Restaurant Order Entry', {
 	setup: function(frm) {
 		let get_item_query = () => {
@@ -11,6 +11,7 @@ frappe.ui.form.on('Restaurant Order Entry', {
 				}
 			};
 		};
+//	    item is a field in table items
 		frm.set_query('item', 'items', get_item_query);
 		frm.set_query('add_item', get_item_query);
 	},
